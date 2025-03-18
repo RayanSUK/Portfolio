@@ -176,6 +176,8 @@
             <h2 class="heading">Contactez <span>Moi</span> </h2>
             
             <form name="contact" method="POST" data-netlify="true"> <!--Pour netlify-->
+                <!-- Champ caché pour que Netlify reconnaisse le formulaire -->
+                <input type="hidden" name="form-name" value="contact" />
                 <div class="input-box">
                     <input type="text" name="full-name" placeholder="Nom complet">
                     <input type="email" name="email" placeholder="Email">
