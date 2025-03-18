@@ -32,7 +32,7 @@ window.onscroll = () => {
 
   /* ---------------sticky navBar-------------*/
   let header = document.querySelector("header");
-  header.classList.toogle("sticky", window.scrollY > 100);
+  header.classList.toggle("sticky", window.scrollY > 100);
 
   /* ---------------remove toogle icon and navbar-------------*/
   menuIcon.classList.remove("fa-xmark");
@@ -50,8 +50,16 @@ ScrollReveal().reveal(".home-content, heading", { origin: "top" });
 ScrollReveal().reveal(
   ".home-img, .services-container, .portfolio-box, .contact form",
   {
-    origin: "buttom",
+    origin: "bottom",
   }
 );
-ScrollReveal().reveal(".home-contact h1, .about-img", { origin: left });
-ScrollReveal().reveal(".home-contact p, .about-content", { origin: right });
+ScrollReveal().reveal(".home-contact h1, .about-img", { origin: "left" });
+ScrollReveal().reveal(".home-contact p, .about-content", { origin: "right" });
+
+const typed = new Typed(".multiple-text", {
+  strings: ["Étudiant en informatique", "Passionné de sport", "Déterminé"],
+  typeSpeed: 70,
+  backSeed: 70,
+  backDelay: 1000,
+  loop: true,
+});
