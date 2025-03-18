@@ -177,15 +177,15 @@
             
             <form name="contact" method="POST" data-netlify="true"> <!--Pour netlify-->
                 <div class="input-box">
-                    <input type="text" placeholder="Nom complet">
-                    <input type="email" placeholder="Email">
+                    <input type="text" name="full-name" placeholder="Nom complet">
+                    <input type="email" name="email" placeholder="Email">
                 </div>
 
                 <div class="input-box">
-                    <input type="number" placeholder="Numéro">
-                    <input type="text" placeholder="Objet de l'email">
+                    <input type="number" name="phone" placeholder="Numéro">
+                    <input type="text" name="subject" placeholder="Objet de l'email">
                 </div>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message"></textarea>
                 <input type="submit" value="Envoyer le message" class="btn">
             </form>
             
